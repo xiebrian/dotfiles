@@ -138,9 +138,18 @@ set encoding=utf-8
 set nocompatible
 set nocp
 
+" DISABLE KEY BINDINGS ~~~~~~~~~~~~~~~~~
+
+nnoremap a <Nop>
+
 " ==============================================================================
 " PLUGINS
 " ==============================================================================
+
+execute pathogen#infect()
+
+" vim-argwrap
+nnoremap <silent> aw :ArgWrap<CR>
 
 " prevent gofmt from running automatically when saving
 let g:go_fmt_autosave = 0
