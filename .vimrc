@@ -47,7 +47,7 @@ set nowrap         " prevent lines from wrapping around
 set scrolloff=7    " minimum number of lines above and below end
 set linebreak      " prevent individual words from being split into two lines
 set nostartofline  " prevent cursor from randomly moving to front of line
-set mouse-=a       " disabled: mouse click takes you to cursor location 
+set mouse=a        " mouse click takes you to cursor location 
 
 set foldenable         " enable folding
 set foldlevelstart=10  " opens most folds by default
@@ -66,14 +66,15 @@ set title         " set screen title to name of file
 set number        " display line numbers on left
 set showmatch     " highlight matching parentheses characters
 set hlsearch      " highlight searches
+set ignorecase    " case insensitive
 set lazyredraw    " redraw only when we need to
 set wildmenu      " better command-line completion
 set laststatus=2  " display status bar
 
 " display ruler after column 80, only for python and C/C++
 autocmd FileType python setlocal colorcolumn=81
-autocmd Filetype cpp setlocal colorcolumn=81
-autocmd Filetype c setlocal colorcolumn=81
+autocmd FileType cpp setlocal colorcolumn=81
+autocmd FileType c setlocal colorcolumn=81
 autocmd FileType python highlight ColorColumn ctermbg=black
 autocmd FileType cpp highlight ColorColumn ctermbg=black
 autocmd FileType c highlight ColorColumn ctermbg=black
@@ -125,7 +126,21 @@ noremap <C-L> <C-W><Right>
 " MISCELLANEOUS ~~~~~~~~~~~~~~~~~~~~~~~~
 
 " ignore these patterns when opening files using glob
-set wildignore+=.pyc,.swp
+set wildmode=list:longest,list:full
+set wildignore+=*.o
+set wildignore+=*.obj,*.class
+set wildignore+=*.jpg,*.jpeg,*.gif,*.png
+set wildignore+=*.zip,*.apk,*.gz
+set wildignore+=*.pyc
+set wildignore+=*.swp,*.swo
+
+set encoding=utf-8
+set nocompatible
+set nocp
+
+" ==============================================================================
+" PLUGINS
+" ==============================================================================
 
 " prevent gofmt from running automatically when saving
 let g:go_fmt_autosave = 0
