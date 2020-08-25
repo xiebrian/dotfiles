@@ -1,6 +1,6 @@
 Dotfiles and configuration files for Ubuntu 18.04.
 
-# Ubuntu-level tweaks:
+# System-level tweaks
 
 ### Install Programs
 
@@ -62,4 +62,60 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left  "['<Ctrl>
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Ctrl><Shift><Super>Right']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up    "['<Ctrl><Shift><Super>Up']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down  "['<Ctrl><Shift><Super>Down']"
+```
+
+
+# Workflow tweaks
+
+### Git configuration
+```
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dotfiles/.gitignore ~/.gitignore
+git config credential.helper store
+```
+
+### Bash configuration
+```
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+touch ~/.bash_local
+```
+
+### Programs to install
+
+NOTE: You may need to install `vim` (ideally version at least 8.1) before the following:
+
+```
+# ag
+sudo apt install silversearcher-ag
+
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+source ~/.bashrc
+
+# diff-so-fancy
+git clone https://github.com/so-fancy/diff-so-fancy.git
+# TODO: add diff-so-fancy to # PATH
+
+# go
+sudo snap install --classic --channel=1.14/stable go
+
+# pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+```
+
+### Vim configuration
+```
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+```
+
+### Plugins
+```
+# vim-argwrap
+git clone https://github.com/FooSoft/vim-argwrap ~/.vim/bundle/vim-argwrap
+
+# vim-go
+git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
+# run :GoInstallBinaries
 ```
