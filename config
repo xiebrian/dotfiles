@@ -1,0 +1,38 @@
+[global_config]
+  inactive_color_offset = 0.9
+  suppress_multiple_term_dialog = True
+  title_font = Sans 12
+  window_state = maximise
+[keybindings]
+  broadcast_all = None
+  broadcast_group = None
+  broadcast_off = None
+  close_term = <Primary>w
+  close_window = <Primary>q
+  cycle_next = None
+  cycle_prev = None
+  layout_launcher = None
+  new_tab = <Ctrl>T
+  next_tab = <Ctrl>Tab
+  prev_tab = <Ctrl><Shift>Tab
+  reset = <Ctrl>R
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#BFBFBF"
+    exit_action = exit
+    font = Mono 13
+    foreground_color = "#d3d7cf"
+    palette = "#2e3436:#cc0000:#4e9a06:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef2929:#8ae234:#edd400:#729fcf:#ad7fa8:#729fcf:#eeeeec"
+    scrollback_lines = 2000
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
