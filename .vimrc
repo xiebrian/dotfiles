@@ -134,7 +134,6 @@ set wildignore+=*.zip,*.apk,*.gz
 set wildignore+=*.pyc
 set wildignore+=*.swp,*.swo
 
-set encoding=utf-8
 set nocompatible
 set nocp
 
@@ -151,5 +150,8 @@ execute pathogen#infect()
 " vim-argwrap
 nnoremap <silent> aw :ArgWrap<CR>
 
+" vim-go
 " prevent gofmt from running automatically when saving
 let g:go_fmt_autosave = 0
+" 'go back' to the last tag (use after GoDef)
+map gb <C-T>
