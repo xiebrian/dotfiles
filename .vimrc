@@ -142,7 +142,7 @@ set nocp
 nnoremap a <Nop>
 
 " ==============================================================================
-" PLUGINS
+" PACKAGES
 " ==============================================================================
 
 execute pathogen#infect()
@@ -155,3 +155,21 @@ nnoremap <silent> aw :ArgWrap<CR>
 let g:go_fmt_autosave = 0
 " 'go back' to the last tag (use after GoDef)
 map gb <C-T>
+
+" ==============================================================================
+" PLUGINS
+" ==============================================================================
+
+" vim-plug auto install
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+" highlights colors in CSS files
+Plug 'ap/vim-css-color', { 'for': [ 'css', 'scss'] }
+
+call plug#end()
