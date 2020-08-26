@@ -28,4 +28,4 @@ git clone https://github.com/FooSoft/vim-argwrap ~/.vim/bundle/vim-argwrap
 
 # vim-go
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
-# TODO: Run :GoInstallBinaries
+echo "Remember to run :GoInstallBinaries"

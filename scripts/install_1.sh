@@ -30,3 +30,5 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left  "['<Ctrl>
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Ctrl><Shift><Super>Right']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up    "['<Ctrl><Shift><Super>Up']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down  "['<Ctrl><Shift><Super>Down']"
+
+echo "Remember to do manual tasks -- see README"
