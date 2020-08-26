@@ -47,7 +47,7 @@ set nowrap         " prevent lines from wrapping around
 set scrolloff=7    " minimum number of lines above and below end
 set linebreak      " prevent individual words from being split into two lines
 set nostartofline  " prevent cursor from randomly moving to front of line
-set mouse=a        " mouse click takes you to cursor location 
+set mouse=a        " mouse click takes you to cursor location
 
 set foldenable         " enable folding
 set foldlevelstart=10  " opens most folds by default
@@ -90,6 +90,9 @@ set statusline+=%=
 set statusline+=\ %l/%L:%c
 hi statusline guibg=DarkGrey ctermfg=8 guifg=White ctermbg=15
 
+" index search
+set shortmess-=S
+
 " NAVIGATION ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 " drag up/down the screen, without changing the cursor location
@@ -104,13 +107,17 @@ map <Down> gj
 map <S-Up> 10k
 map <S-Down> 10j
 
+" move left/right 20 lines
+map <S-Left> 20h
+map <S-Right> 20l
+
 " REMAPPING KEY BINDINGS ~~~~~~~~~~~~~~~
 
 " commonly misspelled commands
-command WQ wq
-command Wq wq
-command W w
-command Q q
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev WQ wq
+cnoreabbrev Wq wq
 nnoremap q: <Nop>
 
 " split pane
@@ -134,31 +141,16 @@ set wildignore+=*.zip,*.apk,*.gz
 set wildignore+=*.pyc
 set wildignore+=*.swp,*.swo
 
-set nocompatible
-set nocp
+" KEYBOARD SHORTCUTS ~~~~~~~~~~~~~~~~~~~
 
-" DISABLE KEY BINDINGS ~~~~~~~~~~~~~~~~~
-
-nnoremap a <Nop>
+" search for word under cursor
+nmap f *N
 
 " ==============================================================================
-" PACKAGES
+" PACKAGES / PLUGINS
 " ==============================================================================
 
 execute pathogen#infect()
-
-" vim-argwrap
-nnoremap <silent> aw :ArgWrap<CR>
-
-" vim-go
-" prevent gofmt from running automatically when saving
-let g:go_fmt_autosave = 0
-" 'go back' to the last tag (use after GoDef)
-map gb <C-T>
-
-" ==============================================================================
-" PLUGINS
-" ==============================================================================
 
 " vim-plug auto install
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -169,7 +161,130 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" highlights colors in CSS files
-Plug 'ap/vim-css-color', { 'for': [ 'css', 'scss'] }
+" Eye Candy ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+" highlight colors
+Plug 'ap/vim-css-color'
+
+" Tools ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+" wrap args to many lines
+Plug 'FooSoft/vim-argwrap'
+" syntax checker
+Plug 'scrooloose/syntastic'
+
+" Formatting ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+" respect editorconfig files
+Plug 'editorconfig/editorconfig-vim'
+" automatic bracket and quote matching, etc
+Plug 'Raimondi/delimitMate'
+" context and indentation-aware pasting
+Plug 'sickill/vim-pasta'
+" powerful commenting
+Plug 'tpope/vim-commentary'
+" manage and replace quotes, brackets, parens, etc
+Plug 'tpope/vim-surround'
+" clean whitespace
+Plug 'ntpeters/vim-better-whitespace'
+
+" Languages ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+" go
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 call plug#end()
+
+" ==============================================================================
+" PLUGIN CONFIGURATIONS
+" ==============================================================================
+
+" vim-argwrap
+nnoremap <silent> aw :ArgWrap<CR>
+
+" syntastic
+let g:syntastic_enable_signs = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_javascript_checkers = ['eslint']
+
+" clean whitespace
+let g:strip_whitespace_on_save = 1
+let g:strip_only_modified_lines = 0
+
+" go
+let g:go_fmt_autosave = 0
+map gb <C-T>
+
+" ==============================================================================
+" UNMAP KEY BINDINGS
+" ==============================================================================
+
+" See https://hea-www.harvard.edu/~fine/Tech/vi.html for all vi commands
+map a <Nop>
+map b <Nop>
+map c <Nop>
+map e <Nop>
+map m <Nop>
+map s <Nop>
+map t <Nop>
+map w <Nop>
+map x <Nop>
+
+map A <Nop>
+map B <Nop>
+map C <Nop>
+map D <Nop>
+map E <Nop>
+map F <Nop>
+map H <Nop>
+map I <Nop>
+map J <Nop>
+map L <Nop>
+map M <Nop>
+map O <Nop>
+map R <Nop>
+map S <Nop>
+map T <Nop>
+map U <Nop>
+map W <Nop>
+map X <Nop>
+map Y <Nop>
+map Z <Nop>
+
+map ! <Nop>
+map @ <Nop>
+map $ <Nop>
+map ^ <Nop>
+map & <Nop>
+map \( <Nop>
+map \) <Nop>
+map \ <Nop>
+map \| <Nop>
+map - <Nop>
+map _ <Nop>
+map = <Nop>
+map + <Nop>
+map ; <Nop>
+map ' <Nop>
+map ` <Nop>
+map " <Nop>
+map ~ <Nop>
+map , <Nop>
+map . <Nop>
+
+map <C-B> <Nop>
+map <C-D> <Nop>
+map <C-F> <Nop>
+map <C-G> <Nop>
+map <C-H> <Nop>
+map <C-J> <Nop>
+map <C-M> <Nop>
+map <C-N> <Nop>
+map <C-P> <Nop>
+map <C-Q> <Nop>
+map <C-R> <Nop>
+map <C-S> <Nop>
+map <C-U> <Nop>
+map <C-Z> <Nop>
+
+map q: <Nop>

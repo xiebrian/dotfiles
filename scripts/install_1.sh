@@ -31,4 +31,10 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Ctrl>
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up    "['<Ctrl><Shift><Super>Up']"
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down  "['<Ctrl><Shift><Super>Down']"
 
+# Update vim version
+# Source: http://ubuntuhandbook.org/index.php/2019/12/install-vim-8-2-ubuntu-18-04-16-04-19-10/
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+
 echo "Remember to do manual tasks -- see README"
