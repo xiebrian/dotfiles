@@ -1,7 +1,5 @@
 #! /bin/bash
 
-# NOTE: Make sure to run this as terminator
-
 # This script installs system-level configurations. Run this first.
 # Some tasks must be done manually, including:
 #   1. Install Chromium
@@ -13,23 +11,23 @@
 
 # Install Terminator
 # NOTE: there seems to be something problematic about this repository
-add-apt-repository ppa:gnome-terminator
-apt update
-apt install terminator
+sudo add-apt-repository ppa:gnome-terminator
+sudo apt update
+sudo apt install terminator
 
 # gnome-tweaks
 sudo apt install gnome-tweaks
 
 # Keyboard shortcuts
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left  "['<Ctrl><Super>Left']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Ctrl><Super>Right']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up    "['<Ctrl><Super>Up']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down  "['<Ctrl><Super>Down']"
+sudo gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left  "['<Ctrl><Super>Left']"
+sudo gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Ctrl><Super>Right']"
+sudo gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up    "['<Ctrl><Super>Up']"
+sudo gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down  "['<Ctrl><Super>Down']"
 
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left  "['<Ctrl><Shift><Super>Left']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Ctrl><Shift><Super>Right']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up    "['<Ctrl><Shift><Super>Up']"
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down  "['<Ctrl><Shift><Super>Down']"
+sudo gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left  "['<Ctrl><Shift><Super>Left']"
+sudo gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Ctrl><Shift><Super>Right']"
+sudo gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up    "['<Ctrl><Shift><Super>Up']"
+sudo gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down  "['<Ctrl><Shift><Super>Down']"
 
 # Update vim version
 # Source: http://ubuntuhandbook.org/index.php/2019/12/install-vim-8-2-ubuntu-18-04-16-04-19-10/

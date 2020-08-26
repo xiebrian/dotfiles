@@ -162,10 +162,12 @@ alias open_files="nautilus ."
 # PACKAGES / PLUGINS
 # ==============================================================================
 
+# ag
+alias ag='ag --path-to-ignore ~/.ignore'
+
 # fzf keyboard shortcuts and settings
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
-alias ag='ag --path-to-ignore ~/.ignore'
 alias vo='vim $(fzf)'
 vc() {
   vim $(ag --nobreak --noheading . | fzf --reverse | awk -F ':' '{print "+" $2 " " $1}')
