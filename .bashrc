@@ -119,6 +119,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# ==============================================================================
+# ADDITIONS
+# ==============================================================================
+
 # Automatically calls ls whenever we switch to a different directory
 function cd {
     builtin cd "$@" && ls
@@ -138,6 +142,13 @@ alias bash_local="vim ~/.bash_local"
 alias sbashrc="source ~/.bashrc"
 alias vimrc="vim ~/.vimrc"
 alias term_config="vim ~/.config/terminator/config"
+
+# Open "Files" at the current directory
+alias open_files="nautilus ."
+
+# ==============================================================================
+# PACKAGES / PLUGINS
+# ==============================================================================
 
 # fzf keyboard shortcuts and settings
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
