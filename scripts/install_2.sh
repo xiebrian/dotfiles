@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# This script configures dotfiles. Run this second
+
 # Terminator config (assumes ~/.config folder exists)
 rm ~/.config/terminator/config
 mkdir ~/.config/terminator
