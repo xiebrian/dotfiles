@@ -156,7 +156,7 @@ alias vimrc="vim ~/.vimrc"
 alias term_config="vim ~/.config/terminator/config"
 
 # Open "Files" at the current directory
-alias open_files="nautilus ."
+alias files="nautilus ."
 
 # ==============================================================================
 # PACKAGES / PLUGINS

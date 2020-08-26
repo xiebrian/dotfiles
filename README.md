@@ -1,4 +1,4 @@
-# Dotfiles / Configurations for Ubuntu 18.04.
+# Dotfiles / Configurations for Ubuntu 18.04
 
 Follow the below instructions to configure your working environment
 
@@ -23,11 +23,11 @@ Manual tasks:
 4. Change Dock appearance:
     - Applications: Firefox, Chromium, Files, Spotify
 
-5. Install the following from Ubuntu Software:
+5. Install the following GNOME extensions from Ubuntu Software. See `./images` for extension settings.
     - Workspace Grid
     - Hide top bar
     - No title bar
-    - Impatience (set to 0.5)
+    - Impatience
 
 6. Keyboard shortcuts:
     - Close window: `<Ctrl>Q`
