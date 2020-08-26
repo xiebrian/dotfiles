@@ -11,10 +11,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 # diff-so-fancy
 mkdir ~/packages
-git clone https://github.com/so-fancy/diff-so-fancy.git ~/packages
-echo '' >> ~/.bashrc
-echo '# diff-so-fancy' >> ~/.bashrc
-echo 'export PATH="$PATH:$HOME/packages/diff-so-fancy"' >> ~/.bashrc
+git clone https://github.com/so-fancy/diff-so-fancy.git ~/packages/diff-so-fancy
 
 # go
 sudo snap install --classic --channel=1.14/stable go
