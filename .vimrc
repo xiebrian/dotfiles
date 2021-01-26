@@ -128,8 +128,8 @@ cnoreabbrev Wq wq
 nnoremap q: <Nop>
 
 " split pane
-map hsp <C-w>s
-map vsp <C-w>v
+map sph <C-w>s
+map spv <C-w>v
 set splitbelow
 set splitright
 noremap <C-H> <C-W><Left>
