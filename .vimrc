@@ -64,6 +64,9 @@ map r <C-r>
 " copy/paste/cut to system clipboard
 set clipboard=unnamedplus
 
+" space opens/closes folds
+nnoremap <space> za
+
 " DISPLAY / COLOR ~~~~~~~~~~~~~~~~~~~~~~
 
 set title         " set screen title to name of file
