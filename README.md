@@ -100,7 +100,11 @@ Follow the below instructions to configure your working environment
 
         <img src="./images/system/additional/bartender/1_general.png" height="200"> <img src="./images/system/additional/bartender/2_menu_bar_layout.png" height="200">
 
-    - Alt-Tab
+    - Alt-Tab (window navigation)
+        - Currently configured to display all windows within active space.
+
+        <img src="./images/system/additional/alttab/1_controls_1.png" height="200"> <img src="./images/system/additional/alttab/2_controls_2.png" height="200"> <img src="./images/system/additional/alttab/3_appearance.png" height="200">
+        
     - Karabiner Elements
     - Alfred 4
 
