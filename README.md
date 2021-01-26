@@ -35,7 +35,8 @@ Follow the below instructions to configure your working environment
     - Desktop & Screen Saver
         - Change desktop background (download from Drive)
         - Disable screensaver (start after: Never)
-    - Dock & Menu Bar
+    - Dock & Menu Bar, Mission Control
+        <img src="./images/system/preferences/preferences_2_desktop_and_screen_saver.png" height="300"> <img src="./images/system/preferences/preferences_3_mission_control.png" height=300">
     - Mission Control
     - Siri
     - Language & Region
