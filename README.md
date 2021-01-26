@@ -30,7 +30,7 @@ Follow the below instructions to configure your working environment
     - Apple ID: disable any apps using iCloud, except "iCloudDrive" and "Find My Mac"
     - General
 
-        <img src="./images/system/preferences/preferences_1_general.png" height="300">
+        <img src="./images/system/preferences/preferences_1_general.png" height="200">
 
     - Desktop & Screen Saver
         - Change desktop background (download from Drive)
@@ -41,9 +41,17 @@ Follow the below instructions to configure your working environment
 
     - Siri: disable completely
     - Language & Region
-    - Notifications
-    - Bluetooth / Sound
+
+        <img src="./images/system/preferences/preferences_4_language_and_region.png" height="200">
+
+    - Notifications: disable completely
+    - Bluetooth / Sound: connect Airpods + disable "Play sound on startup"
     - Keyboard
+        - Keyboard, Text:
+
+            <img src="./images/system/preferences/preferences_5_keyboard_keyboard.png" height="200"> <img src="./images/system/preferences/preferences_6_keyboard_text.png" height="200">
+
+        - Shortcuts
     - Trackpad
     - Mouse
     - Display
