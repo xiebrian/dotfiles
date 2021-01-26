@@ -27,6 +27,8 @@ Follow the below instructions to configure your working environment
 <img src="./images/system/finder/finder_1_general.png" height="200"> <img src="./images/system/finder/finder_2_tags.png" height="200"> <img src="./images/system/finder/finder_3_sidebar.png" height="200"> <img src="./images/system/finder/finder_4_advanced.png" height="200">
 
 6. System Preferences
+    <details>
+        <summary>See more</summary>
     - Apple ID: disable any apps using iCloud, except "iCloudDrive" and "Find My Mac"
     - General
 
@@ -69,7 +71,8 @@ Follow the below instructions to configure your working environment
 
     - Battery
 
-        <img src="./images/system/preferences/preferences_17_battery_battery.png" height="200"> <img src="./images/system/preferences/preferences_18_battery_power_adapter" height="200">
+        <img src="./images/system/preferences/preferences_17_battery_battery.png" height="200"> <img src="./images/system/preferences/preferences_18_battery_power_adapter.png" height="200">
+    </details>
 
 7. TODO: Install 3rd party programs:
     - Smooze (Mouse)
