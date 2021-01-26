@@ -23,8 +23,11 @@ Follow the below instructions to configure your working environment
 4. Install NordPass (desktop app)
 
 5. Finder
-    - Go to `Finder > Preferences` in the menu bar. 
-    - TODO: See the screenshots below for the appropriate settings.
+    - Go to `Finder > Preferences` in the menu bar. Configure as follows:
+    - ![General](./images/system/finder/finder_1_general.png)
+    - ![Tags](./images/system/finder/finder_1_tags.png)
+    - ![Sidebar](./images/system/finder/finder_1_sidebar.png)
+    - ![Advanced](./images/system/finder/finder_1_advanced.png)
 
 6. TODO: System Preferences
     - Apple ID
