@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-# This script sets up dotfiles and other config files. Run this immediately after installing iTerm2.
-
-# iTerm config
-rm ~/Library/Preferences/com.googlecode.iterm2.plist
-ln -s ~/projects/dotfiles/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+# This script sets up dotfiles. Run this immediately after installing iTerm2.
 
 # Git config
 rm ~/.gitconfig ~/.gitignore

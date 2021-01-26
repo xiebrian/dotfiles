@@ -143,6 +143,11 @@ cd dotfiles
 git checkout macos
 
 ./scripts/install_1.sh
+
+# You may need to go into iTerm preferences > General > Preferences and load from
+# ~/projects/dotfiles/iterm
+# Setup default iTerm2 window arrangement, following the directions here:
+# https://apple.stackexchange.com/questions/98342/changing-the-default-size-of-iterm2-when-it-opens
 ```
 
 3. Install Brew
