@@ -24,11 +24,10 @@ Follow the below instructions to configure your working environment
 
 5. Finder
     - Go to `Finder > Preferences` in the menu bar. Configure as follows:
-    - <img src="./images/system/finder/finder_1_general.png" height="100">
-    - ![General](./images/system/finder/finder_1_general.png)
-    - ![Tags](./images/system/finder/finder_2_tags.png)
-    - ![Sidebar](./images/system/finder/finder_3_sidebar.png)
-    - ![Advanced](./images/system/finder/finder_4_advanced.png)
+    - <img src="./images/system/finder/finder_1_general.png" height="200">
+    - <img src="./images/system/finder/finder_2_tags.png" height="200">
+    - <img src="./images/system/finder/finder_3_sidebar.png" height="200">
+    - <img src="./images/system/finder/finder_4_advanced.png" height="200">
 
 6. TODO: System Preferences
     - Apple ID
