@@ -51,7 +51,10 @@ Follow the below instructions to configure your working environment
 
             <img src="./images/system/preferences/preferences_5_keyboard_keyboard.png" height="200"> <img src="./images/system/preferences/preferences_6_keyboard_text.png" height="200">
 
-        - Shortcuts
+        - Shortcuts: disable everything except the following
+
+            <img src="./images/system/preferences/preferences_7_keyboard_shortcuts_mission_control.png" height="200"> <img src="./images/system/preferences/preferences_8_keyboard_shortcuts_keyboard.png" height="200"> <img src="./images/system/preferences/preferences_9_keyboard_shortcuts_screenshots.png" height="200"> <img src="./images/system/preferences/preferences_10_keyboard_shortcuts_spotlight.png" height="200">
+
     - Trackpad
     - Mouse
     - Display
