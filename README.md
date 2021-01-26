@@ -26,9 +26,12 @@ Follow the below instructions to configure your working environment
 
 <img src="./images/system/finder/finder_1_general.png" height="200"> <img src="./images/system/finder/finder_2_tags.png" height="200"> <img src="./images/system/finder/finder_3_sidebar.png" height="200"> <img src="./images/system/finder/finder_4_advanced.png" height="200">
 
-6. TODO: System Preferences
-    - Apple ID
+6. System Preferences
+    - Apple ID: disable any apps using iCloud, except "iCloudDrive" and "Find My Mac"
     - General
+
+<img src="./images/system/preferences/preferences_1_general.png" height="300">
+
     - Desktop & Screen Saver
     - Dock & Menu Bar
     - Mission Control
