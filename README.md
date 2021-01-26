@@ -25,7 +25,9 @@ Follow the below instructions to configure your working environment
 5. Finder (`Finder > Preferences` in menu bar)
     <details>
         <summary>See more</summary>
+        
 <img src="./images/system/finder/finder_1_general.png" height="200"> <img src="./images/system/finder/finder_2_tags.png" height="200"> <img src="./images/system/finder/finder_3_sidebar.png" height="200"> <img src="./images/system/finder/finder_4_advanced.png" height="200">
+
     </details>
 
 6. System Preferences
