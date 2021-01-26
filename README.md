@@ -130,5 +130,38 @@ Follow the below instructions to configure your working environment
 
 ### Coding Environment
 
-1. Install / Configure iTerm2
+1. Install iTerm2
+    - (Note: I would prefer to use Terminator, but as of now it is impossible to install Terminator on MacOS 11. Terminator must be installed using the Fink project, but Fink currently does not support MacOS 11)
     - Download and install directly from the [iTerm2 website](https://iterm2.com)
+
+2. Set up dotfiles and config files
+
+```
+mkdir ~/projects; cd ~/projects
+git clone https://github.com/xiebrian/dotfiles.git
+cd dotfiles
+git checkout macos
+
+./scripts/install_1.sh
+```
+
+3. Install Brew
+
+```
+./scripts/install_2.sh
+```
+
+4. Update Bash and set as default shell (see [here](https://itnext.io/upgrading-bash-on-macos-7138bd1066ba) for more info)
+
+```
+brew install bash
+which -a bash
+# You should see two shells: the default system bash (something like /bin/bash) and the updated version (something like /opt/homebrew/bin/bash). Note the path to the updated version
+
+# "Whitelist" the newly installed bash shell
+sudo vim /etc/shells
+# Append the filepath to the end of the file
+
+# Set Bash as the default shell
+chsh -s /path/to/shell
+```
