@@ -23,8 +23,10 @@ Follow the below instructions to configure your working environment
 4. Install NordPass (desktop app)
 
 5. Finder (`Finder > Preferences` in menu bar)
-
+    <details>
+        <summary>See more</summary>
 <img src="./images/system/finder/finder_1_general.png" height="200"> <img src="./images/system/finder/finder_2_tags.png" height="200"> <img src="./images/system/finder/finder_3_sidebar.png" height="200"> <img src="./images/system/finder/finder_4_advanced.png" height="200">
+    </details>
 
 6. System Preferences
     <details>
@@ -60,7 +62,7 @@ Follow the below instructions to configure your working environment
 
     - Trackpad
 
-        <img src="./images/system/preferences/preferences_11_trackpad_point_and_click.png" height="160"> <img src="./images/system/preferences/preferences_12_trackpad_scroll_and_zoom.png" height="160"> <img src="images/system/preferences/preferences_13_more_gestures.png" height="160">
+        <img src="./images/system/preferences/preferences_11_trackpad_point_and_click.png" height="200"> <img src="./images/system/preferences/preferences_12_trackpad_scroll_and_zoom.png" height="200"> <img src="images/system/preferences/preferences_13_more_gestures.png" height="200">
 
     - Mouse
 
