@@ -56,6 +56,9 @@ Follow the below instructions to configure your working environment
             <img src="./images/system/preferences/preferences_7_keyboard_shortcuts_mission_control.png" height="200"> <img src="./images/system/preferences/preferences_8_keyboard_shortcuts_keyboard.png" height="200"> <img src="./images/system/preferences/preferences_9_keyboard_shortcuts_screenshots.png" height="200"> <img src="./images/system/preferences/preferences_10_keyboard_shortcuts_spotlight.png" height="200">
 
     - Trackpad
+
+        <img src="./images/system/preferences/preferences_11_trackpad_point_and_click.png" height="200"> <img src="./images/system/preferences/preferences_12_trackpad_scroll_and_zoom.png" height="200"> <img src="images/system/preferences/preferences_13_more_gestures.png" height="200">
+
     - Mouse
     - Display
     - Battery
