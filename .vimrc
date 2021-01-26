@@ -79,12 +79,19 @@ set wildmenu      " better command-line completion
 set laststatus=2  " display status bar
 
 " display ruler after column 80, only for python and C/C++
+" see https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
 autocmd FileType python setlocal colorcolumn=81
 autocmd FileType cpp setlocal colorcolumn=81
 autocmd FileType c setlocal colorcolumn=81
-autocmd FileType python highlight ColorColumn ctermbg=black
-autocmd FileType cpp highlight ColorColumn ctermbg=black
-autocmd FileType c highlight ColorColumn ctermbg=black
+if stridx($TERM, '256color') != -1
+    autocmd FileType python highlight ColorColumn ctermbg=235
+    autocmd FileType cpp highlight ColorColumn ctermbg=235
+    autocmd FileType c highlight ColorColumn ctermbg=235
+else
+    autocmd FileType python highlight ColorColumn ctermbg=darkgrey
+    autocmd FileType cpp highlight ColorColumn ctermbg=darkgrey
+    autocmd FileType c highlight ColorColumn ctermbg=darkgrey
+endif
 
 " dark grey line numbers
 highlight LineNr ctermfg=darkgrey
