@@ -85,9 +85,9 @@ Follow the below instructions to configure your working environment
         <summary>See more</summary>
 
     - Smooze (Mouse)
-        - Install / purchase. As of now, I have a license which should be usable for one more computer
+        - Install / purchase. I have a license which should be usable for one more computer.
 
-        <img src="./images/system/additional/smooze/1_smooze.png" height="300">
+        <img src="./images/system/additional/smooze/1_smooze.png" height="200">
 
     - BetterSnapTool
         - Download from the App Store. I purchased it several years ago.
