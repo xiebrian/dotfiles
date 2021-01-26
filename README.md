@@ -60,7 +60,13 @@ Follow the below instructions to configure your working environment
         <img src="./images/system/preferences/preferences_11_trackpad_point_and_click.png" height="160"> <img src="./images/system/preferences/preferences_12_trackpad_scroll_and_zoom.png" height="160"> <img src="images/system/preferences/preferences_13_more_gestures.png" height="160">
 
     - Mouse
+
+        <img src="./images/system/preferences/preferences_14_mouse.png" height="200">
+
     - Display
+
+        <img src="./images/system/preferences/preferences_15_display_display.png" height="200"> <img src="./images/system/preferences/preferences_16_display_night_shift.png" height="200">
+
     - Battery
 
 7. TODO: Install 3rd party programs:
