@@ -30,9 +30,11 @@ Follow the below instructions to configure your working environment
     - Apple ID: disable any apps using iCloud, except "iCloudDrive" and "Find My Mac"
     - General
 
-<img src="./images/system/preferences/preferences_1_general.png" height="300">
+        <img src="./images/system/preferences/preferences_1_general.png" height="300">
 
     - Desktop & Screen Saver
+        - Change desktop background (download from Drive)
+        - Disable screensaver (start after: Never)
     - Dock & Menu Bar
     - Mission Control
     - Siri
