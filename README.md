@@ -116,10 +116,8 @@ Follow the below instructions to configure your working environment
         - Create hotkey keyboard shortcut (Alt-Cmd-N) to create a new workspace.
         - TODO: Figure out if there's a convenient way to export workflows across systems.
         - TODO: Create keyboard shortcut to move windows between workspaces
-        - TODO: configure clipboard history
-        - TODO: fix some issues with searching for files
 
-        <img src="./images/system/additional/alfred/1_general.png" height="200"> <img src="./images/system/additional/alfred/2_new_workspace.png" height="200">
+        <img src="./images/system/additional/alfred/1_general.png" height="200"> <img src="./images/system/additional/alfred/2_new_workspace.png" height="200"> <img src="./images/system/additional/alfred/3_clipboard_history.png" height="200">
 
     </details>
 
