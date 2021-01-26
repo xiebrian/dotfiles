@@ -3,6 +3,7 @@
 	name = xiebrian
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = /Users/brianxie/.gitignore
 [color]
 	ui = true
 [color "diff-highlight"]
