@@ -156,7 +156,10 @@ git checkout macos
 ```
 brew install bash
 which -a bash
-# You should see two shells: the default system bash (something like /bin/bash) and the updated version (something like /opt/homebrew/bin/bash). Note the path to the updated version
+# You should see two shells:
+# - default system bash (something like /bin/bash)
+# - updated version (something like /opt/homebrew/bin/bash)
+# Note the path to the updated version.
 
 # "Whitelist" the newly installed bash shell
 sudo vim /etc/shells
