@@ -80,13 +80,26 @@ Follow the below instructions to configure your working environment
         <img src="./images/system/preferences/preferences_17_battery_battery.png" height="200"> <img src="./images/system/preferences/preferences_18_battery_power_adapter.png" height="200">
     </details>
 
-7. TODO: Install 3rd party programs:
+7. Install additional 3rd party programs:
+    <details>
+        <summary>See more</summary>
+
     - Smooze (Mouse)
+        - Install / purchase. As of now, I have a license which should be usable for one more computer
+
+        <img src="./images/system/additional/smooze/1_smooze.png" height="300">
+
     - BetterSnapTool
+        - Download from the App Store. I purchased it several years ago.
+
+        <img src="./images/system/additional/bettersnaptool/1_general_settings.png" height="200"> <img src="./images/system/additional/bettersnaptool/2_customizations.png" height="200"> <img src="./images/system/additional/bettersnaptool/3_keyboard_shortcuts.png" height="200"> <img src="./images/system/additional/bettersnaptool/4_snap_areas.png" height="200"> <img src="./images/system/additional/bettersnaptool/5_extras.png" height="200">
+
     - Bartender4
     - Alt-Tab
     - Karabiner Elements
     - Alfred 4
+
+    </details>
 
 8. Miscellaneous manual tasks:
     - Go to Stocks, and configure watchlist appropriately
