@@ -98,7 +98,7 @@ Follow the below instructions to configure your working environment
         - Currently using free trial; will cost $15 when out of free trial.
         - Apparently optimized for MacOS Big Sur
 
-        <img src="./images/system/additional/bartender/1_general.png height="200"> <img src="./images/system/additional/bartender/2_customizations.png" height="200">
+        <img src="./images/system/additional/bartender/1_general.png" height="200"> <img src="./images/system/additional/bartender/2_customizations.png" height="200">
 
     - Alt-Tab
     - Karabiner Elements
