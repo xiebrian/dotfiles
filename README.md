@@ -114,6 +114,7 @@ Follow the below instructions to configure your working environment
     - Alfred 4
         - Purchase power-pack (not sure if license can be shared across multiple computers).
         - Create hotkey keyboard shortcut (Alt-Cmd-N) to create a new workspace.
+        - TODO: Figure out if there's a convenient way to export workflows across systems.
         - TODO: Create keyboard shortcut to move windows between workspaces
         - TODO: configure clipboard history
         - TODO: fix some issues with searching for files
