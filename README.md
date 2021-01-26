@@ -106,6 +106,11 @@ Follow the below instructions to configure your working environment
         <img src="./images/system/additional/alttab/1_controls_1.png" height="200"> <img src="./images/system/additional/alttab/2_controls_2.png" height="200"> <img src="./images/system/additional/alttab/3_appearance.png" height="200">
         
     - Karabiner Elements
+        - Remapped caps lock and escape.
+        - TODO: If the Apple magic keyboard supports it, remap fn and ctrl
+
+        <img src="./images/system/additional/karabiner_elements/1_simple_modifications.png" height="200">
+
     - Alfred 4
 
     </details>
