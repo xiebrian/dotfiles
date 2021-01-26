@@ -95,10 +95,10 @@ Follow the below instructions to configure your working environment
         <img src="./images/system/additional/bettersnaptool/1_general_settings.png" height="200"> <img src="./images/system/additional/bettersnaptool/2_customizations.png" height="200"> <img src="./images/system/additional/bettersnaptool/3_keyboard_shortcuts.png" height="200"> <img src="./images/system/additional/bettersnaptool/4_snap_areas.png" height="200"> <img src="./images/system/additional/bettersnaptool/5_extras.png" height="200">
 
     - Bartender4 (menu bar)
-        - Currently using free trial; will cost $15 when out of free trial.
+        - Currently using free trial; will cost $15 when out of free trial. May need to purchase and activate license at some point.
         - Apparently optimized for MacOS Big Sur
 
-        <img src="./images/system/additional/bartender/1_general.png" height="200"> <img src="./images/system/additional/bartender/2_customizations.png" height="200">
+        <img src="./images/system/additional/bartender/1_general.png" height="200"> <img src="./images/system/additional/bartender/2_menu_bar_layout.png" height="200">
 
     - Alt-Tab
     - Karabiner Elements
