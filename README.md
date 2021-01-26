@@ -57,7 +57,7 @@ Follow the below instructions to configure your working environment
 
     - Trackpad
 
-        <img src="./images/system/preferences/preferences_11_trackpad_point_and_click.png" height="200"> <img src="./images/system/preferences/preferences_12_trackpad_scroll_and_zoom.png" height="200"> <img src="images/system/preferences/preferences_13_more_gestures.png" height="200">
+        <img src="./images/system/preferences/preferences_11_trackpad_point_and_click.png" height="160"> <img src="./images/system/preferences/preferences_12_trackpad_scroll_and_zoom.png" height="160"> <img src="images/system/preferences/preferences_13_more_gestures.png" height="160">
 
     - Mouse
     - Display
