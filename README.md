@@ -29,6 +29,7 @@ Follow the below instructions to configure your working environment
 6. System Preferences
     <details>
         <summary>See more</summary>
+
     - Apple ID: disable any apps using iCloud, except "iCloudDrive" and "Find My Mac"
     - General
 
