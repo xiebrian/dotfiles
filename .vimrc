@@ -62,7 +62,7 @@ set foldmethod=indent  " fold based on indent level; run ':help foldmethod' for 
 map r <C-r>
 
 " copy/paste/cut to system clipboard
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " DISPLAY / COLOR ~~~~~~~~~~~~~~~~~~~~~~
 

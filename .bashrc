@@ -1,3 +1,7 @@
+# ==============================================================================
+# BASE CONFIGURATION
+# ==============================================================================
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -119,10 +123,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Automatically calls ls whenever we switch to a different directory
-function cd {
-    builtin cd "$@" && ls
-}
+# ==============================================================================
+# SETTINGS
+# ==============================================================================
 
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 export EDITOR=vim
@@ -132,6 +135,19 @@ export LSCOLORS=GxBxCxDxCxEgEdAbAgAcAd
 
 export GREP_OPTIONS='--color=always'
 export GREP_COLOR='1;35;40'
+
+# Ensure python3
+alias python='/usr/bin/python3'
+alias pip='/usr/bin/pip3'
+
+# ==============================================================================
+# COMMANDS
+# ==============================================================================
+
+# Automatically calls ls whenever we switch to a different directory
+function cd {
+    builtin cd "$@" && ls
+}
 
 # sudo executes aliases properly
 alias sudo="sudo "
@@ -143,6 +159,19 @@ alias sbashrc="source ~/.bashrc"
 alias vimrc="vim ~/.vimrc"
 alias term_config="vim ~/.config/terminator/config"
 
+# Open Finder at the current directory
+alias files="open ."
+
+# ==============================================================================
+# PACKAGES / PLUGINS
+# ==============================================================================
+
+# Homebrew
+eval $(/opt/homebrew/bin/brew shellenv)
+
+# ag
+alias ag='ag --path-to-ignore ~/.ignore'
+
 # fzf keyboard shortcuts and settings
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
@@ -150,3 +179,6 @@ alias vo='vim $(fzf)'
 vc() {
   vim $(ag --nobreak --noheading . | fzf --reverse | awk -F ':' '{print $1" + "$s}')
 }
+
+# diff-so-fancy
+export PATH="$PATH:$HOME/packages/diff-so-fancy"
