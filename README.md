@@ -127,3 +127,8 @@ Follow the below instructions to configure your working environment
     - Go to Stocks, and configure watchlist appropriately
     - TODO: Printers & Scanners
     - TODO: Speed up animations on MacOS
+
+### Coding Environment
+
+1. Install / Configure iTerm2
+    - Download and install directly from the [iTerm2 website](https://iterm2.com)
