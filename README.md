@@ -112,6 +112,13 @@ Follow the below instructions to configure your working environment
         <img src="./images/system/additional/karabiner_elements/1_simple_modifications.png" height="200">
 
     - Alfred 4
+        - Purchase power-pack (not sure if license can be shared across multiple computers).
+        - Create hotkey keyboard shortcut (Alt-Cmd-N) to create a new workspace.
+        - TODO: Create keyboard shortcut to move windows between workspaces
+        - TODO: configure clipboard history
+        - TODO: fix some issues with searching for files
+
+        <img src="./images/system/additional/alfred/1_general.png" height="200"> <img src="./images/system/additional/alfred/2_new_workspace.png" height="200">
 
     </details>
 
