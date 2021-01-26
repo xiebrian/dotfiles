@@ -168,3 +168,10 @@ sudo vim /etc/shells
 # Set Bash as the default shell
 chsh -s /path/to/shell
 ```
+
+5. Install additional packages
+
+```
+# Go: visit https://golang.org/doc/install, download, and follow the instructions
+./scripts/install_3.sh
+```
