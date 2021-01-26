@@ -84,17 +84,22 @@ Follow the below instructions to configure your working environment
     <details>
         <summary>See more</summary>
 
-    - Smooze (Mouse)
+    - Smooze (mouse scrolling)
         - Install / purchase. I have a license which should be usable for one more computer.
 
         <img src="./images/system/additional/smooze/1_smooze.png" height="200">
 
-    - BetterSnapTool
+    - BetterSnapTool (window management)
         - Download from the App Store. I purchased it several years ago.
 
         <img src="./images/system/additional/bettersnaptool/1_general_settings.png" height="200"> <img src="./images/system/additional/bettersnaptool/2_customizations.png" height="200"> <img src="./images/system/additional/bettersnaptool/3_keyboard_shortcuts.png" height="200"> <img src="./images/system/additional/bettersnaptool/4_snap_areas.png" height="200"> <img src="./images/system/additional/bettersnaptool/5_extras.png" height="200">
 
-    - Bartender4
+    - Bartender4 (menu bar)
+        - Currently using free trial; will cost $15 when out of free trial.
+        - Apparently optimized for MacOS Big Sur
+
+        <img src="./images/system/additional/bartender/1_general.png height="200"> <img src="./images/system/additional/bartender/2_customizations.png" height="200">
+
     - Alt-Tab
     - Karabiner Elements
     - Alfred 4
