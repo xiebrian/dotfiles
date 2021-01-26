@@ -37,7 +37,7 @@ Follow the below instructions to configure your working environment
         - Disable screensaver (start after: Never)
     - Dock & Menu Bar, Mission Control
 
-        <img src="./images/system/preferences/preferences_2_desktop_and_screen_saver.png" height="300"> <img src="./images/system/preferences/preferences_3_mission_control.png" height="300">
+        <img src="./images/system/preferences/preferences_2_desktop_and_screen_saver.png" height="200"> <img src="./images/system/preferences/preferences_3_mission_control.png" height="200">
 
     - Siri: disable completely
     - Language & Region
