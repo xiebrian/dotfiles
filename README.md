@@ -69,6 +69,8 @@ Follow the below instructions to configure your working environment
 
     - Battery
 
+        <img src="./images/system/preferences/preferences_17_battery_battery.png" height="200"> <img src="./images/system/preferences/preferences_18_battery_power_adapter" height="200">
+
 7. TODO: Install 3rd party programs:
     - Smooze (Mouse)
     - BetterSnapTool
