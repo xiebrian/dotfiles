@@ -105,7 +105,7 @@ Follow the below instructions to configure your working environment
 
         <img src="./images/system/additional/alttab/1_controls_1.png" height="200"> <img src="./images/system/additional/alttab/2_controls_2.png" height="200"> <img src="./images/system/additional/alttab/3_appearance.png" height="200">
         
-    - --Karabiner Elements--
+    - ~~Karabiner Elements~~
         - Temporarily disabling because of compatability issues with MacOS 11. Instead, I added a fourth script to achieve caps to esc mapping. See below 
     - Alfred 4
         - Purchase power-pack (not sure if license can be shared across multiple computers).
