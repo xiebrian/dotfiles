@@ -73,7 +73,7 @@ Follow the below instructions to configure your working environment
 
     - Display
 
-        <img src="./images/system/preferences/preferences_15_display.png" height="200"> <img src="./images/system/preferences/preferences_16_display_night_shift.png" height="200">
+        <img src="./images/system/preferences/preferences_15_display_display.png" height="200"> <img src="./images/system/preferences/preferences_16_display_night_shift.png" height="200">
 
     - Battery
 
