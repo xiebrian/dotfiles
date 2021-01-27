@@ -107,6 +107,7 @@ Follow the below instructions to configure your working environment
         
     - ~~Karabiner Elements~~
         - Temporarily disabling because of compatability issues with MacOS 11. Instead, I added a fourth script to achieve caps to esc mapping. See below 
+        - TODO: Find a way to remap Ctrl and Fn without using Karabiner
     - Alfred 4
         - Purchase power-pack (not sure if license can be shared across multiple computers).
         - Create hotkey keyboard shortcut (Alt-Cmd-N) to create a new workspace.
