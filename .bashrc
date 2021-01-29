@@ -177,7 +177,7 @@ alias ag='ag --path-to-ignore ~/.ignore'
 export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
 alias vo='vim $(fzf)'
 vc() {
-  vim $(ag --nobreak --noheading . | fzf --reverse | awk -F ':' '{print $1" + "$s}')
+  vim $(ag --nobreak --noheading . | fzf --reverse | awk -F ':' '{print $1" +"$2}')
 }
 
 # diff-so-fancy
