@@ -5,6 +5,7 @@
 brew install the_silver_searcher
 brew install fzf
 brew install diff-so-fancy
+brew install jq
 
 # pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle

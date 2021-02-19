@@ -36,6 +36,16 @@ set autoindent     " autoindents like in IDEs
 
 filetype plugin indent on
 
+" Ensure that tsx files are recognized as typescript
+augroup SyntaxSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+    autocmd BufNewFile,BufRead *.svelte set filetype=typescript
+augroup END
+
+" Use new regular expression engine (otherwise typescript syntax is extremely slow)
+set re=0
+
 " prevents autoformatting for comments
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
@@ -251,7 +261,6 @@ map D <Nop>
 map E <Nop>
 map F <Nop>
 map H <Nop>
-map I <Nop>
 map J <Nop>
 map L <Nop>
 map M <Nop>
@@ -296,7 +305,6 @@ map <C-M> <Nop>
 map <C-N> <Nop>
 map <C-P> <Nop>
 map <C-Q> <Nop>
-map <C-R> <Nop>
 map <C-S> <Nop>
 map <C-U> <Nop>
 map <C-Z> <Nop>
