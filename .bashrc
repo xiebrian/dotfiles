@@ -171,13 +171,19 @@ eval $(/opt/homebrew/bin/brew shellenv)
 
 # ag
 alias ag='ag --path-to-ignore ~/.ignore'
+alias agq='ag -Q --path-to-ignore ~/.ignore'
 
 # fzf keyboard shortcuts and settings
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
+export FZF_DEFAULT_OPTS='--height 50% --reverse --border --tabstop 1'
 alias vo='vim $(fzf)'
 vc() {
-  vim $(ag --nobreak --noheading . | fzf --reverse | awk -F ':' '{print $1" +"$2}')
+  vim $(ag --nobreak --noheading . | fzf | awk -F ':' '{print $1" +"$2}')
+}
+cdo() {
+  path=$(fzf | sed 's/\(.*\)\/.*/\1/')
+  echo $path
+  cd $path
 }
 
 # diff-so-fancy

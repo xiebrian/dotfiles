@@ -299,8 +299,6 @@ map <C-B> <Nop>
 map <C-D> <Nop>
 map <C-F> <Nop>
 map <C-G> <Nop>
-map <C-H> <Nop>
-map <C-J> <Nop>
 map <C-M> <Nop>
 map <C-N> <Nop>
 map <C-P> <Nop>
@@ -310,3 +308,9 @@ map <C-U> <Nop>
 map <C-Z> <Nop>
 
 map q: <Nop>
+
+" NEW FEATURES =================================================================
+
+" Was encountering issues with xml files lagging; VIM syntax-highlighting is
+" slow for long lines
+set synmaxcol=400
