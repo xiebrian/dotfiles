@@ -1,9 +1,10 @@
 [user]
-	email = brianxie98@gmail.com
-	name = xiebrian
+	name = Brian Xie
+	email = bxie@plaid.com
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
-	excludesfile = /Users/brianxie/.gitignore
+	excludesfile = /Users/bxie/.gitignore
+	attributesfiles = ~/.gitattributes
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -20,3 +21,7 @@
 	whitespace = red reverse
 [alias]
 	graph = log --graph --oneline --decorate --color --all
+    undo = reset HEAD~1 --mixed
+    publish = push origin HEAD
+[url "git@github.plaid.com:"]
+	insteadOf = https://github.plaid.com/

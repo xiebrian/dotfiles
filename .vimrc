@@ -27,14 +27,29 @@ set tabstop=4      " width of tab character
 set softtabstop=4  " fine tunes amount of white space to be added
 set shiftwidth=4   " determines amount of whitespace to add in normal mode
 
-" use 2-space tabs for Typescript and Proto files
+" use 2-space tabs for: JS, Typescript, Proto, bash, tf
+autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType typescript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType proto setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType sh setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType vim setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType terraform setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 set expandtab      " use space instead of tabs
 set autoindent     " autoindents like in IDEs
 
 filetype plugin indent on
+
+" Ensure that tsx files are recognized as typescript
+augroup SyntaxSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+  autocmd BufNewFile,BufRead *.svelte set filetype=typescript
+augroup END
+
+" Use new regular expression engine (otherwise typescript syntax is extremely slow)
+set re=0
 
 " prevents autoformatting for comments
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -73,24 +88,28 @@ set title         " set screen title to name of file
 set number        " display line numbers on left
 set showmatch     " highlight matching parentheses characters
 set hlsearch      " highlight searches
-set ignorecase    " case insensitive
+set smartcase
+set ignorecase    " HACK: for smartcase to work we must then set ignorecase
 set lazyredraw    " redraw only when we need to
 set wildmenu      " better command-line completion
 set laststatus=2  " display status bar
 
-" display ruler after column 80, only for python and C/C++
+" display ruler after column 80, only for python, C/C++, and TS
 " see https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
 autocmd FileType python setlocal colorcolumn=81
 autocmd FileType cpp setlocal colorcolumn=81
 autocmd FileType c setlocal colorcolumn=81
+autocmd FileType typescript setlocal colorcolumn=81
 if stridx($TERM, '256color') != -1
-    autocmd FileType python highlight ColorColumn ctermbg=235
-    autocmd FileType cpp highlight ColorColumn ctermbg=235
-    autocmd FileType c highlight ColorColumn ctermbg=235
+  autocmd FileType python highlight ColorColumn ctermbg=235
+  autocmd FileType cpp highlight ColorColumn ctermbg=235
+  autocmd FileType c highlight ColorColumn ctermbg=235
+  autocmd FileType typescript highlight ColorColumn ctermbg=235
 else
-    autocmd FileType python highlight ColorColumn ctermbg=darkgrey
-    autocmd FileType cpp highlight ColorColumn ctermbg=darkgrey
-    autocmd FileType c highlight ColorColumn ctermbg=darkgrey
+  autocmd FileType python highlight ColorColumn ctermbg=darkgrey
+  autocmd FileType cpp highlight ColorColumn ctermbg=darkgrey
+  autocmd FileType c highlight ColorColumn ctermbg=darkgrey
+  autocmd FileType typescript highlight ColorColumn ctermbg=darkgrey
 endif
 
 " dark grey line numbers
@@ -226,8 +245,21 @@ let g:strip_whitespace_on_save = 1
 let g:strip_only_modified_lines = 0
 
 " go
-let g:go_fmt_autosave = 0
+let g:go_imports_mode = 'gopls'
+let g:go_imports_autosave = 1
+let g:go_fmt_autosave = 1
+let g:go_fmt_command = 'gofmt'
+let g:go_fmt_options = {'gofmt': '-s'}
+let g:go_fmt_experimental = 1
+let g:go_auto_type_info = 1
+
 map gb <C-T>
+autocmd FileType go nnoremap <buffer> gt :GoDefType<CR>
+
+" " typescript
+autocmd FileType typescript nnoremap <buffer> gd :TsuDefinition<CR>
+autocmd FileType typescript nnoremap <buffer> gt :TsuTypeDefinition<CR>
+autocmd FileType typescript nnoremap <buffer> gi :TsuImplementation<CR>
 
 " ==============================================================================
 " UNMAP KEY BINDINGS
@@ -251,7 +283,6 @@ map D <Nop>
 map E <Nop>
 map F <Nop>
 map H <Nop>
-map I <Nop>
 map J <Nop>
 map L <Nop>
 map M <Nop>
@@ -290,15 +321,20 @@ map <C-B> <Nop>
 map <C-D> <Nop>
 map <C-F> <Nop>
 map <C-G> <Nop>
-map <C-H> <Nop>
-map <C-J> <Nop>
 map <C-M> <Nop>
 map <C-N> <Nop>
 map <C-P> <Nop>
 map <C-Q> <Nop>
-map <C-R> <Nop>
 map <C-S> <Nop>
 map <C-U> <Nop>
 map <C-Z> <Nop>
 
 map q: <Nop>
+
+" NEW FEATURES =============================
+
+" Was encountering issues with xml files lagging; VIM syntax-highlighting is slow for long lines
+set synmaxcol=400
+
+" sourcegraph
+nnoremap <leader>cs :silent :execute '!$SHELL -i -c "browsesource $(basename $(git rev-parse --show-toplevel)) $(git ls-files --full-name %) ' . line('.') . '"'<CR>

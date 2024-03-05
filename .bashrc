@@ -20,8 +20,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -167,18 +167,46 @@ alias files="open ."
 # ==============================================================================
 
 # Homebrew
-eval $(/opt/homebrew/bin/brew shellenv)
+# eval $(/opt/homebrew/bin/brew shellenv)
 
 # ag
 alias ag='ag --path-to-ignore ~/.ignore'
+alias agq='ag --path-to-ignore ~/.ignore -Q'
 
 # fzf keyboard shortcuts and settings
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPTS='--height 50% --layout=reverse --border'
-alias vo='vim $(fzf)'
+export FZF_DEFAULT_OPTS='--height 50% --reverse --border --tabstop 1'
+
+cdo() {
+  path=$(fzf | sed 's/\(.*\)\/.*/\1/')
+  echo "cd $path"
+  cd $path
+}
+
+# vim fuzzy open by filename with file preview
+vo() {
+  vim $( \
+    fzf \
+      --query="$@" \
+      --preview="bat --color=always --style=numbers --theme=gruvbox-dark {}" \
+  )
+}
+
+# vim fuzzy open by file contents with file preview and highlighted source line
 vc() {
-  vim $(ag --nobreak --noheading . | fzf --reverse | awk -F ':' '{print $1" +"$2}')
+  vim $( \
+    ag --noheading --nobreak . \
+    | fzf \
+      --delimiter=":" \
+      --query="$@" \
+      --preview="bat --style=numbers --color=always --theme=gruvbox-dark --highlight-line {2} {1}" \
+      --preview-window '+{2}+3/2' \
+    | awk -F ':' '{print $1" +"$2}' # open to specific line number
+  )
 }
 
 # diff-so-fancy
 export PATH="$PATH:$HOME/packages/diff-so-fancy"
+
+
+export PATH=/Users/bxie/.tiup/bin:$PATH

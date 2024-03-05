@@ -6,20 +6,10 @@
 	<false/>
 	<key>AllowClipboardAccess</key>
 	<true/>
-	<key>AppleAntiAliasingThreshold</key>
-	<integer>1</integer>
-	<key>ApplePressAndHoldEnabled</key>
-	<false/>
-	<key>AppleScrollAnimationEnabled</key>
-	<integer>0</integer>
-	<key>AppleSmoothFixedFontsSizeThreshold</key>
-	<integer>1</integer>
-	<key>AppleWindowTabbingMode</key>
-	<string>manual</string>
 	<key>CopySelection</key>
 	<false/>
 	<key>Default Arrangement Name</key>
-	<string>3 Vertical Home</string>
+	<string>Vertical 3 Panes</string>
 	<key>Default Bookmark Guid</key>
 	<string>5BFB3CEC-7B36-43AD-9877-DEB9B549BB3E</string>
 	<key>DimOnlyText</key>
@@ -66,6 +56,15 @@
 		<dict>
 			<key>Action</key>
 			<integer>0</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xd-0x100000-0x24</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -118,17 +117,19 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf702-0x2c0000</key>
-		<dict>
-			<key>Action</key>
-			<integer>51</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 		<key>0xf702-0x300000</key>
 		<dict>
 			<key>Action</key>
 			<integer>18</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf702-0x320000-0x7b</key>
+		<dict>
+			<key>Action</key>
+			<integer>51</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -139,17 +140,19 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf703-0x2c0000</key>
-		<dict>
-			<key>Action</key>
-			<integer>52</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 		<key>0xf703-0x300000</key>
 		<dict>
 			<key>Action</key>
 			<integer>19</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x320000-0x7c</key>
+		<dict>
+			<key>Action</key>
+			<integer>52</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -505,6 +508,15 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1f</string>
+				</dict>
+				<key>0x2f-0x100000-0x2c</key>
+				<dict>
+					<key>Action</key>
+					<integer>12</integer>
+					<key>Label</key>
+					<string></string>
+					<key>Text</key>
+					<string>gc</string>
 				</dict>
 				<key>0x32-0x40000</key>
 				<dict>
@@ -878,6 +890,8 @@
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<true/>
+	<key>OpenBookmark</key>
+	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<false/>
 	<key>PerPaneBackgroundImage</key>
@@ -924,7 +938,7 @@
 	<false/>
 	<key>Window Arrangements</key>
 	<dict>
-		<key>3 Vertical Home</key>
+		<key>Vertical 3 Panes</key>
 		<array>
 			<dict>
 				<key>Desired Columns</key>
@@ -955,7 +969,7 @@
 						<key>Root</key>
 						<dict>
 							<key>Splitter ID</key>
-							<string>4E751475-B90C-4C8C-9CFA-451F85306246</string>
+							<string>1B0FBF80-A19A-4F5F-9258-F123D9B41D17</string>
 							<key>Subviews</key>
 							<array>
 								<dict>
@@ -1265,7 +1279,7 @@
 												<real>0.73333334922790527</real>
 											</dict>
 											<key>Guid</key>
-											<string>6807BEE2-D751-4926-92D7-E976D5D13930</string>
+											<string>783BF48E-5D2B-4BDE-B19D-DBB9D4339562</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -1667,16 +1681,17 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/brianxie</string>
-											<string>/Users/brianxie</string>
-											<string>/Users/brianxie</string>
-											<string>/Users/brianxie</string>
-											<string>/Users/brianxie</string>
+											<string>/Users/bxie</string>
+											<string>/Users/bxie</string>
+											<string>/Users/bxie</string>
+											<string>/Users/bxie</string>
+											<string>/Users/bxie</string>
+											<string>/Users/bxie</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/brianxie</string>
+											<string>/Users/bxie</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -1702,14 +1717,14 @@
 										<key>Program</key>
 										<dict>
 											<key>Command</key>
-											<string>login -fp "brianxie"</string>
+											<string>login -fp "bxie"</string>
 											<key>Type</key>
 											<string>Command</string>
 										</dict>
 										<key>Rows</key>
 										<integer>84</integer>
 										<key>Session GUID</key>
-										<string>3E2AAC58-8749-4FB8-B177-D59766311CFC</string>
+										<string>A580EE75-655F-457C-B9D4-151DD2EC255A</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -1719,7 +1734,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/brianxie</string>
+										<string>/Users/bxie</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -2044,7 +2059,7 @@
 												<real>0.73333334922790527</real>
 											</dict>
 											<key>Guid</key>
-											<string>CCCC0048-0386-402E-88CD-7B3ADCDF7AF6</string>
+											<string>57897A7C-B753-4D64-8D87-2E70EDAF5285</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -2446,12 +2461,13 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/brianxie</string>
+											<string>/Users/bxie</string>
+											<string>/Users/bxie</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/brianxie</string>
+											<string>/Users/bxie</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -2482,7 +2498,7 @@
 										<key>Rows</key>
 										<integer>84</integer>
 										<key>Session GUID</key>
-										<string>0CAA342B-33FE-4742-A24A-6AF892791DDF</string>
+										<string>C04AFFF8-D786-4404-B7E8-A3B6D26F4B52</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -2492,7 +2508,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/brianxie</string>
+										<string>/Users/bxie</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -2817,7 +2833,7 @@
 												<real>0.73333334922790527</real>
 											</dict>
 											<key>Guid</key>
-											<string>C836C3A4-2B6F-4D37-9384-B33D16D61AAF</string>
+											<string>7F9255AE-F15D-4979-8376-F17FBF8C29FD</string>
 											<key>Horizontal Spacing</key>
 											<real>1</real>
 											<key>Idle Code</key>
@@ -3219,12 +3235,12 @@
 										<array/>
 										<key>Directories</key>
 										<array>
-											<string>/Users/brianxie</string>
+											<string>/Users/bxie</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/brianxie</string>
+											<string>/Users/bxie</string>
 										</dict>
 										<key>Hostname to Shell</key>
 										<dict/>
@@ -3255,7 +3271,7 @@
 										<key>Rows</key>
 										<integer>84</integer>
 										<key>Session GUID</key>
-										<string>1C80CFBA-B853-4696-8B2D-C6E976C1F767</string>
+										<string>3ED42D0A-C7EC-417B-A349-974AFE0A9553</string>
 										<key>Short Lived Single Use</key>
 										<false/>
 										<key>Should Expect Current Dir Updates</key>
@@ -3265,7 +3281,7 @@
 										<key>Substitutions</key>
 										<dict/>
 										<key>Working Directory</key>
-										<string>/Users/brianxie</string>
+										<string>/Users/bxie</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>
@@ -3301,11 +3317,11 @@
 							<true/>
 						</dict>
 						<key>Tab GUID</key>
-						<string>838C2392-4040-4845-83AA-4DF0B9B224FD</string>
+						<string>78CC890C-0E2A-4B2D-B3CA-CE3536C5C474</string>
 					</dict>
 				</array>
 				<key>TerminalGuid</key>
-				<string>pty-E3188A99-2915-4696-B3C1-6E67D6C74138</string>
+				<string>pty-A2698E7E-D116-44FB-B0B4-EB24E0BA8D7B</string>
 				<key>Toolbelt</key>
 				<dict>
 					<key>Profiles</key>
@@ -3338,9 +3354,9 @@
 				<key>Window Type</key>
 				<integer>12</integer>
 				<key>X Origin</key>
-				<real>1440</real>
+				<real>1792</real>
 				<key>Y Origin</key>
-				<real>-540</real>
+				<real>-320</real>
 			</dict>
 		</array>
 	</dict>
